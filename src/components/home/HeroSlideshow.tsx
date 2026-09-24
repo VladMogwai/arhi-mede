@@ -81,7 +81,8 @@ export function HeroSlideshow({ slides, exampleLabel, nextLabel }: HeroSlideshow
 
   return (
     <div ref={rootRef} className="absolute inset-0 bg-ink">
-      <div className="absolute inset-0 overflow-hidden">
+      {/* isolate: keeps the slides' z-index inside this layer so the hero gradient stays above them. */}
+      <div className="absolute inset-0 isolate overflow-hidden">
         {slides.map((source, index) => (
           <div
             key={index}

@@ -38,7 +38,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           exampleLabel={common.examplePhoto}
           nextLabel={common.nextPhoto}
         />
-        <div className="intro-fade pointer-events-none absolute inset-0 bg-linear-to-b from-ink/45 via-ink/5 to-ink/55" />
+        {/* Darkens the top and bottom so the white wordmark, menu and statement read on light photos too. */}
+        <div className="intro-fade pointer-events-none absolute inset-0 bg-linear-to-b from-ink/60 from-0% via-ink/10 via-40% to-ink/55" />
         <HeroIntroThumbs images={introImages} />
       </div>
 

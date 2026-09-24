@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, IBM_Plex_Mono, Inter, Jost } from "next/font/google";
 import { siteUrl, studio } from "@/config/site";
 import type { Locale } from "@/i18n/config";
+import { PageScrollbar } from "./PageScrollbar";
 import { SiteFooter } from "./SiteFooter";
 import "../../app/globals.css";
 
@@ -46,6 +47,7 @@ export function RootDocument({ locale, children }: { locale: Locale; children: R
       <body>
         {children}
         <SiteFooter locale={locale} />
+        <PageScrollbar />
       </body>
     </html>
   );

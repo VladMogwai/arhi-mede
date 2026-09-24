@@ -27,9 +27,29 @@
 
 html {
   scroll-behavior: smooth;
-  /* Thin, square, translucent ink scrollbar; inherited by inner scroll areas such as the project aside. */
+  /* Thin, square, translucent ink scrollbar for inner scroll areas such as the project aside. */
   scrollbar-width: thin;
   scrollbar-color: rgb(17 17 17 / 0.3) transparent;
+}
+
+/*
+ * With a mouse or trackpad the page scrollbar is drawn by PageScrollbar (macOS overlay scrollbars
+ * ignore scrollbar-color), so the native one is hidden. Touch devices keep their native scrollbar.
+ */
+.page-scrollbar {
+  display: none;
+}
+
+@media (pointer: fine) {
+  html {
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  .page-scrollbar {
+    display: block;
+  }
 }
 
 /* Safari does not support scrollbar-color yet. */
