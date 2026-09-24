@@ -171,41 +171,62 @@ html[data-intro="play"] {
 }
 
 /*
- * Hero slideshow (src/components/home/HeroSlideshow.tsx): the active slide wipes up from the
- * bottom over the previous one while its photo settles from a slight zoom; idle slides wait
- * fully clipped. The corner preview wipes in the same way.
+ * Hero slideshow (src/components/home/HeroSlideshow.tsx). The wipe is two opposite translations:
+ * the outer layer rises from below while the inner layer moves down by the same amount, so the photo
+ * appears to be uncovered from the bottom up. Transforms only, so the GPU composites every frame.
  */
-.hero-slide {
-  clip-path: inset(100% 0 0 0);
+.hero-slide,
+.hero-preview {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  transform: translateY(100%);
+  will-change: transform;
   z-index: 0;
-  & img {
-    transform: scale(1.2);
-    transition: transform 2.6s cubic-bezier(0.22, 1, 0.36, 1);
+  & > * {
+    height: 100%;
+    transform: translateY(-100%);
+    will-change: transform;
   }
   &[data-state="previous"] {
-    clip-path: inset(0);
+    transform: none;
     z-index: 1;
+    & > * {
+      transform: none;
+    }
   }
   &[data-state="active"] {
-    clip-path: inset(0);
+    transform: none;
     z-index: 2;
-    transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.18, 1);
+    & > * {
+      transform: none;
+    }
+  }
+}
+
+.hero-slide {
+  & img {
+    transform: scale(1.2);
+    will-change: transform;
   }
   &:not([data-state="idle"]) img {
-    transform: scale(1);
+    transform: none;
+  }
+  &[data-state="active"],
+  &[data-state="active"] > * {
+    transition: transform 1.6s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  &[data-state="active"] img {
+    transition: transform 2.8s cubic-bezier(0.22, 1, 0.36, 1);
   }
 }
 
 .hero-preview {
-  clip-path: inset(100% 0 0 0);
-  transform: scale(1.08);
-  &[data-state="previous"] {
-    clip-path: inset(0);
-    z-index: 1;
+  & img {
+    transform: scale(1.08);
   }
-  &[data-state="active"] {
-    clip-path: inset(0);
-    z-index: 2;
-    transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.25s;
+  &[data-state="active"],
+  &[data-state="active"] > * {
+    transition: transform 1.3s cubic-bezier(0.65, 0, 0.35, 1) 0.3s;
   }
 }

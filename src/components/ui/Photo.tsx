@@ -14,17 +14,21 @@ type PhotoProps = {
   className?: string;
   imageClassName?: string;
   priority?: boolean;
+  /** Load immediately even when off screen, e.g. slides that are about to be shown. */
+  eager?: boolean;
+  /** Colour shown while the image loads; dark behind white text such as the hero wordmark. */
+  placeholder?: "light" | "dark";
 };
 
 export function resolvePhoto(source: PhotoSource): ResponsiveImage {
   return source.kind === "media" ? mediaImage(source.src) : { src: pexelsUrl(source.pexelsId, 1280), srcSet: pexelsSrcSet(source.pexelsId) };
 }
 
-export function Photo({ source, alt, sizes = "100vw", exampleLabel, className = "", imageClassName = "", priority = false }: PhotoProps) {
+export function Photo({ source, alt, sizes = "100vw", exampleLabel, className = "", imageClassName = "", priority = false, eager = false, placeholder = "light" }: PhotoProps) {
   const image = resolvePhoto(source);
 
   return (
-    <figure className={`relative overflow-hidden bg-sand ${className}`}>
+    <figure className={`relative overflow-hidden ${placeholder === "dark" ? "bg-ink" : "bg-sand"} ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element -- static export: responsive sources are generated at build time */}
       <img
         src={image.src}
@@ -33,7 +37,7 @@ export function Photo({ source, alt, sizes = "100vw", exampleLabel, className = 
         width={image.width}
         height={image.height}
         alt={alt}
-        loading={priority ? "eager" : "lazy"}
+        loading={priority || eager ? "eager" : "lazy"}
         fetchPriority={priority ? "high" : undefined}
         decoding="async"
         className={`h-full w-full object-cover ${imageClassName}`}
