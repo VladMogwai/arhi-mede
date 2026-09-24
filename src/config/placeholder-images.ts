@@ -5,7 +5,7 @@
  * Photo pages: https://www.pexels.com/photo/<id>/
  */
 export const placeholderPhotos = {
-  hero: 7031604, // wood and glass house with a lawn
+  hero: 18121478, // gabled house with a green roof in a mountain valley
   landscape: 37179496, // Carpathian mountains in Romania, spring
   studio: 36809500, // studio wall with sketches and models
   sketch: 6614748, // architectural sketches in a notebook
