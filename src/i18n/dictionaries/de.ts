@@ -10,6 +10,7 @@ export const de: Dictionary = {
   },
   common: {
     examplePhoto: "Beispielfoto",
+    nextPhoto: "Nächstes Foto",
     viewProject: "Zum Projekt",
     allProjects: "Alle Projekte",
     backToProjects: "Projekte",

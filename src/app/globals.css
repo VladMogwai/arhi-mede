@@ -24,6 +24,26 @@
 
 html {
   scroll-behavior: smooth;
+  /* Thin, square, translucent ink scrollbar; inherited by inner scroll areas such as the project aside. */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(17 17 17 / 0.3) transparent;
+}
+
+/* Safari does not support scrollbar-color yet. */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(17 17 17 / 0.3);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(17 17 17 / 0.55);
+  }
 }
 
 body {
@@ -147,5 +167,45 @@ html[data-intro="play"] {
 @keyframes intro-fade {
   from {
     opacity: 0;
+  }
+}
+
+/*
+ * Hero slideshow (src/components/home/HeroSlideshow.tsx): the active slide wipes up from the
+ * bottom over the previous one while its photo settles from a slight zoom; idle slides wait
+ * fully clipped. The corner preview wipes in the same way.
+ */
+.hero-slide {
+  clip-path: inset(100% 0 0 0);
+  z-index: 0;
+  & img {
+    transform: scale(1.2);
+    transition: transform 2.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  &[data-state="previous"] {
+    clip-path: inset(0);
+    z-index: 1;
+  }
+  &[data-state="active"] {
+    clip-path: inset(0);
+    z-index: 2;
+    transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.18, 1);
+  }
+  &:not([data-state="idle"]) img {
+    transform: scale(1);
+  }
+}
+
+.hero-preview {
+  clip-path: inset(100% 0 0 0);
+  transform: scale(1.08);
+  &[data-state="previous"] {
+    clip-path: inset(0);
+    z-index: 1;
+  }
+  &[data-state="active"] {
+    clip-path: inset(0);
+    z-index: 2;
+    transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.18, 1) 0.25s;
   }
 }

@@ -10,6 +10,7 @@ export const en: Dictionary = {
   },
   common: {
     examplePhoto: "Example photo",
+    nextPhoto: "Next photo",
     viewProject: "View project",
     allProjects: "All projects",
     backToProjects: "Projects",

@@ -8,6 +8,7 @@ export const ro = {
   },
   common: {
     examplePhoto: "Foto exemplu",
+    nextPhoto: "Fotografia următoare",
     viewProject: "Vezi proiectul",
     allProjects: "Toate proiectele",
     backToProjects: "Proiecte",

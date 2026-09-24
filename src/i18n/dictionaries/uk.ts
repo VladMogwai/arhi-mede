@@ -10,6 +10,7 @@ export const uk: Dictionary = {
   },
   common: {
     examplePhoto: "Фото для прикладу",
+    nextPhoto: "Наступне фото",
     viewProject: "Переглянути проєкт",
     allProjects: "Усі проєкти",
     backToProjects: "Проєкти",

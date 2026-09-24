@@ -1,5 +1,5 @@
 import { pexelsSrcSet, pexelsUrl } from "@/config/placeholder-images";
-import { mediaImage } from "@/lib/media";
+import { mediaImage, type ResponsiveImage } from "@/lib/media";
 
 /** A studio image committed to public/media, or a Pexels stand-in that is labelled as an example. */
 export type PhotoSource = { kind: "media"; src: string } | { kind: "example"; pexelsId: number };
@@ -16,11 +16,12 @@ type PhotoProps = {
   priority?: boolean;
 };
 
+export function resolvePhoto(source: PhotoSource): ResponsiveImage {
+  return source.kind === "media" ? mediaImage(source.src) : { src: pexelsUrl(source.pexelsId, 1280), srcSet: pexelsSrcSet(source.pexelsId) };
+}
+
 export function Photo({ source, alt, sizes = "100vw", exampleLabel, className = "", imageClassName = "", priority = false }: PhotoProps) {
-  const image =
-    source.kind === "media"
-      ? mediaImage(source.src)
-      : { src: pexelsUrl(source.pexelsId, 1280), srcSet: pexelsSrcSet(source.pexelsId), width: undefined, height: undefined };
+  const image = resolvePhoto(source);
 
   return (
     <figure className={`relative overflow-hidden bg-sand ${className}`}>

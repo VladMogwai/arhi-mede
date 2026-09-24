@@ -3,10 +3,11 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ArrowIcon, ArrowLink } from "@/components/ui/ArrowLink";
 import { HeroIntroScript, HeroIntroThumbs } from "@/components/home/HeroIntro";
+import { HeroSlideshow } from "@/components/home/HeroSlideshow";
 import { Caption } from "@/components/ui/Caption";
 import { Facts } from "@/components/ui/Facts";
 import { Photo } from "@/components/ui/Photo";
-import { placeholderPhotos } from "@/config/placeholder-images";
+import { heroSlides, placeholderPhotos } from "@/config/placeholder-images";
 import { studio } from "@/config/site";
 import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -32,14 +33,12 @@ export function HomePage({ locale }: { locale: Locale }) {
       <HeroIntroScript />
       {/* The hero photo runs under the wordmark and navigation. */}
       <div className="hero-frame absolute inset-x-0 top-0 h-svh">
-        <Photo
-          source={{ kind: "example", pexelsId: placeholderPhotos.hero }}
-          alt=""
+        <HeroSlideshow
+          slides={heroSlides.map((pexelsId) => ({ kind: "example", pexelsId }))}
           exampleLabel={common.examplePhoto}
-          priority
-          className="h-full [&>figcaption]:top-auto [&>figcaption]:right-3 [&>figcaption]:bottom-3 [&>figcaption]:left-auto"
+          nextLabel={common.nextPhoto}
         />
-        <div className="intro-fade absolute inset-0 bg-linear-to-b from-ink/45 via-ink/5 to-ink/55" />
+        <div className="intro-fade pointer-events-none absolute inset-0 bg-linear-to-b from-ink/45 via-ink/5 to-ink/55" />
         <HeroIntroThumbs images={introImages} />
       </div>
 
