@@ -109,7 +109,7 @@ export function HeroSlideshow({ slides, exampleLabel, nextLabel }: HeroSlideshow
           type="button"
           onClick={() => void advance()}
           aria-label={nextLabel}
-          className="intro-fade absolute right-[8%] -bottom-20 z-10 hidden aspect-video w-[34vw] max-w-[500px] cursor-pointer overflow-hidden bg-ink md:block"
+          className="intro-fade absolute right-[8%] -bottom-20 z-10 hidden aspect-video h-[min(19vw,26svh,281px)] cursor-pointer overflow-hidden bg-ink md:block"
         >
           {slides.map((source, index) => {
             const image = resolvePhoto(source);

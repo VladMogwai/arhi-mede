@@ -16,8 +16,11 @@
 }
 
 :root {
-  /* The wordmark spans the full width, so its height is a function of the viewport width. */
-  --wordmark-size: 17.2vw;
+  /*
+   * The wordmark spans the full width, so it scales with the viewport width, but never takes more
+   * than about a fifth of the screen height on wide, short windows (laptops, browsers with toolbars).
+   */
+  --wordmark-size: min(17.2vw, 23svh);
   --wordmark-height: calc(var(--wordmark-size) * 0.86);
   --nav-height: 2.75rem;
 }
