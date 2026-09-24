@@ -7,9 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export:original": "node scripts/export-original.ts"
+    "export:original": "node scripts/export-original.ts",
+    "build:media": "node scripts/build-media.ts",
+    "import:original": "node scripts/import-original.ts",
+    "predev": "node scripts/build-media.ts",
+    "prebuild": "node scripts/build-media.ts"
   },
   "dependencies": {
+    "marked": "^18.0.14",
     "next": "16.3.6",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -22,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
     "node-html-parser": "^9.0.4",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

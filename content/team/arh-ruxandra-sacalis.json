@@ -1,0 +1,22 @@
+{
+  "ro": {
+    "name": "Ruxandra Sacaliș",
+    "order": 2,
+    "photo": "/media/team/arh-ruxandra-sacalis.webp",
+    "role": "Arhitect",
+    "summary": "Iubitoare de patrimoniu și design de produs; explorează legătura dintre identitatea locală și designul contemporan.",
+    "bio": "Arh. Ruxandra Sacaliș, iubitoare de patrimoniu și design de produs încearcă prin lucrările ei, să exploreze relația dintre identitatea locală și designul contemporan și să redescopere legătura cu meșteșugul tradițional pentru a crea obiecte care devin fundalul vieții zilnice. Ea experimentează cu materiale naturale pentru a crea obiecte ce răspund nevoilor și emoțiilor umane, ca apoi să transmită povești ale utilizatorilor.\n[https://ruxisacalis.com/](https://ruxisacalis.com/)"
+  },
+  "en": {
+    "role": "Architect",
+    "summary": "Passionate about heritage and product design; explores the link between local identity and contemporary design."
+  },
+  "de": {
+    "role": "Architektin",
+    "summary": "Begeistert von Baukultur und Produktdesign; erforscht die Verbindung zwischen lokaler Identität und zeitgenössischem Design."
+  },
+  "uk": {
+    "role": "Архітекторка",
+    "summary": "Захоплюється архітектурною спадщиною та предметним дизайном; досліджує зв’язок між місцевою ідентичністю й сучасним дизайном."
+  }
+}

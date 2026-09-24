@@ -1,0 +1,19 @@
+{
+  "ro": {
+    "title": "Amenajare interioară la Râșnov",
+    "category": "amenajare-interioara",
+    "order": 4,
+    "featured": false,
+    "location": "Râșnov",
+    "year": null,
+    "area": null,
+    "highlights": [],
+    "images": [
+      "/media/projects/amenajare-interioara-la-rasnov/01.webp",
+      "/media/projects/amenajare-interioara-la-rasnov/02.webp",
+      "/media/projects/amenajare-interioara-la-rasnov/03.webp"
+    ],
+    "summary": "Amenajarea are ca idee principală crearea unei ambianțe moderne, folosind însă elemente estetice adaptate perioadei în care a fost construită casa (anii `50).",
+    "body": "Amenajarea are ca idee principală crearea unei ambianțe moderne, folosind însă elemente estetice adaptate perioadei în care a fost construită casa (anii `50). Elementele de mobilier sunt concepute simplu și funcționale, corpurile de iluminat sunt în parte reutilizate și recondiționate. Fiecare detaliu este studiat și urmărit până la finalizarea lui în locuință."
+  }
+}

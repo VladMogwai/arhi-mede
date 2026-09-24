@@ -1,0 +1,22 @@
+{
+  "ro": {
+    "title": "Casa pasivă din Bragadiru",
+    "category": "constructii-noi",
+    "order": 13,
+    "featured": false,
+    "location": "Bragadiru",
+    "year": null,
+    "area": null,
+    "highlights": [
+      "Passivhaus",
+      "CLT"
+    ],
+    "images": [
+      "/media/projects/casa-pasiva-din-bragadiru/01.webp",
+      "/media/projects/casa-pasiva-din-bragadiru/02.webp",
+      "/media/projects/casa-pasiva-din-bragadiru/03.webp"
+    ],
+    "summary": "Casa pasivă din Bragadiru este prima locuință certificată Institutul de Care Pasive din Darmstadt din zona Bucureștiului.",
+    "body": "*Casa pasivă din Bragadiru* este prima locuință certificată Institutul de Care Pasive din Darmstadt din zona Bucureștiului. Este o clădire de locuit unifamilială aflată în zona de extindere din vestul orașului, la granița dintre sectorul 5 și orașul Bragadiru. Într-un peisaj haotic, cu infrastructură extrem de proastă, dar în care emerge o comunitate nouă, această casă a fost un experiment din mai multe puncte de vedere: structura de CLT (cross laminated timber) și închiderile exterioare au fost făcute în sistem de șantier-școală cu voluntari – arhitecți și ingineri – timp de 3 săptămâni."
+  }
+}

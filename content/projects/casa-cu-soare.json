@@ -1,0 +1,21 @@
+{
+  "ro": {
+    "title": "Casa cu soare",
+    "category": "constructii-noi",
+    "order": 11,
+    "featured": false,
+    "location": "",
+    "year": null,
+    "area": null,
+    "highlights": [
+      "Passivhaus",
+      "CLT"
+    ],
+    "images": [
+      "/media/projects/casa-cu-soare/01.webp",
+      "/media/projects/casa-cu-soare/02.webp"
+    ],
+    "summary": "Casa cu soare este o clădire de locuit unifamilială eficientă energetic la standard pasiv, certificată de Institutul de Care Pasive din Darmstadt.",
+    "body": "*Casa cu soare* este o clădire de locuit unifamilială eficientă energetic la standard pasiv, certificată de Institutul de Care Pasive din Darmstadt. Într-o parcelare tipică pentru suburbiile capitalei, cu loturi medii ca dimensiune, cu străzi înguste, fără considerație față de spațiul public și nevoile unei comunități în formare, fără utilități decente, beneficiarul caută să realizeze confortul pe care autoritatea publică îl refuză – maximizarea spațiului verde, consumuri reduce și impact minim asupra mediului.\n\nLocuirea este organizată pe un singur nivel, pe structură din lemn (CLT – cross laminated timber), astfel încât în volumul acoperișului a fost gândită o seră pentru plante cu învelitoare parțial transparentă din policarbonat.\n\nMai multe detalii despre proiect pe [www.casacusoare.ro](http://www.casacusoare.ro)"
+  }
+}
