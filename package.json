@@ -12,7 +12,7 @@
     "import:original": "node scripts/import-original.ts",
     "predev": "node scripts/build-media.ts",
     "prebuild": "node scripts/build-media.ts",
-    "deploy": "pnpm build && wrangler deploy"
+    "deploy:cf": "pnpm build && wrangler deploy"
   },
   "dependencies": {
     "marked": "^18.0.14",
