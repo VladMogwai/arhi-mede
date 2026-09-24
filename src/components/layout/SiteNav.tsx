@@ -31,7 +31,7 @@ export function SiteNav({ locale, links, overHero }: SiteNavProps) {
   return (
     <nav
       ref={navRef}
-      className={`sticky top-0 z-40 flex h-(--nav-height) items-center justify-between border-t px-3 text-[13px] transition-colors duration-300 ${
+      className={`intro-fade sticky top-0 z-40 flex h-(--nav-height) items-center justify-between border-t px-3 text-[13px] transition-colors duration-300 ${
         transparent ? "border-paper/40 text-paper [text-shadow:0_1px_10px_rgb(0_0_0/0.45)]" : "border-line bg-paper/95 text-ink backdrop-blur-sm"
       }`}
     >

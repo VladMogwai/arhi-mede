@@ -77,3 +77,75 @@ body {
     animation-duration: 0.01ms !important;
   }
 }
+
+/*
+ * Home intro, as on archidomo.fr: a small frame on white cycles through project photos,
+ * opens up to the full hero, then the wordmark letters rise and the rest fades in.
+ * An inline script (src/components/home/HeroIntro.tsx) sets html[data-intro="play"] once per
+ * session and never for reduced motion; without it every element shows its final state.
+ */
+:root {
+  --intro-frame: 36% 39% 36% 39%;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --intro-frame: 38% 22% 38% 22%;
+  }
+}
+
+.intro-thumbs {
+  display: none;
+}
+
+html[data-intro="play"] {
+  & .hero-frame {
+    animation: intro-reveal 2.3s cubic-bezier(0.77, 0, 0.18, 1) both;
+  }
+  & .intro-thumbs {
+    display: block;
+  }
+  & .intro-thumbs > img {
+    animation: intro-thumb-out 0.2s ease forwards;
+  }
+  & .intro-letter {
+    animation: intro-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-delay: calc(1.9s + var(--letter-index) * 45ms);
+  }
+  & .intro-fade,
+  & .hero-frame figcaption {
+    animation: intro-fade 0.8s ease both;
+    animation-delay: 2.1s;
+  }
+}
+
+@keyframes intro-reveal {
+  0% {
+    clip-path: inset(50% 50% 50% 50%);
+  }
+  12%,
+  55% {
+    clip-path: inset(var(--intro-frame));
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes intro-thumb-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes intro-rise {
+  from {
+    transform: translateY(105%);
+  }
+}
+
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+  }
+}

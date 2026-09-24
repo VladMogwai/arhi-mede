@@ -41,7 +41,8 @@ export const rootMetadata: Metadata = {
  */
 export function RootDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
   return (
-    <html lang={locale} className={`${cormorant.variable} ${inter.variable} ${plexMono.variable} ${jost.variable}`}>
+    // suppressHydrationWarning: the home intro script adds data-intro to <html> before React hydrates.
+    <html lang={locale} suppressHydrationWarning className={`${cormorant.variable} ${inter.variable} ${plexMono.variable} ${jost.variable}`}>
       <body>
         {children}
         <SiteFooter locale={locale} />

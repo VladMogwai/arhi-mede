@@ -27,12 +27,17 @@ export function SiteHeader({ locale, overHero = false }: SiteHeaderProps) {
       <Link
         href={localePath(locale)}
         aria-label={studio.name}
-        className={`relative z-10 flex h-(--wordmark-height) items-center justify-between px-3 font-wordmark text-(length:--wordmark-size) leading-none font-normal uppercase ${
+        className={`relative z-10 flex h-(--wordmark-height) items-center overflow-hidden justify-between px-3 font-wordmark text-(length:--wordmark-size) leading-none font-normal uppercase ${
           overHero ? "text-paper" : "text-ink"
         }`}
       >
         {[...studio.wordmark.toUpperCase()].map((letter, index) => (
-          <span key={index} aria-hidden="true" className={letter === " " ? "w-[0.2em]" : undefined}>
+          <span
+            key={index}
+            aria-hidden="true"
+            className={`intro-letter inline-block ${letter === " " ? "w-[0.2em]" : ""}`}
+            style={{ "--letter-index": index } as React.CSSProperties}
+          >
             {letter}
           </span>
         ))}

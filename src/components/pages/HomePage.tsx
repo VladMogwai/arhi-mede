@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ArrowIcon, ArrowLink } from "@/components/ui/ArrowLink";
+import { HeroIntroScript, HeroIntroThumbs } from "@/components/home/HeroIntro";
 import { Caption } from "@/components/ui/Caption";
 import { Facts } from "@/components/ui/Facts";
 import { Photo } from "@/components/ui/Photo";
@@ -20,11 +21,17 @@ export function homeMetadata(locale: Locale): Metadata {
 
 export function HomePage({ locale }: { locale: Locale }) {
   const { home, common } = getDictionary(locale);
+  const featured = getFeaturedProject(locale);
+  const introImages = getProjects(locale)
+    .filter((project) => project.slug !== featured.slug && project.category === featured.category)
+    .slice(0, 3)
+    .map((project) => project.images[0]);
 
   return (
     <>
+      <HeroIntroScript />
       {/* The hero photo runs under the wordmark and navigation. */}
-      <div className="absolute inset-x-0 top-0 h-svh">
+      <div className="hero-frame absolute inset-x-0 top-0 h-svh">
         <Photo
           source={{ kind: "example", pexelsId: placeholderPhotos.hero }}
           alt=""
@@ -32,13 +39,14 @@ export function HomePage({ locale }: { locale: Locale }) {
           priority
           className="h-full [&>figcaption]:top-auto [&>figcaption]:right-3 [&>figcaption]:bottom-3 [&>figcaption]:left-auto"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-ink/45 via-ink/5 to-ink/55" />
+        <div className="intro-fade absolute inset-0 bg-linear-to-b from-ink/45 via-ink/5 to-ink/55" />
+        <HeroIntroThumbs images={introImages} />
       </div>
 
       <SiteHeader locale={locale} overHero />
 
       <section className="relative flex h-[calc(100svh-var(--wordmark-height)-var(--nav-height))] items-end px-3 pb-12">
-        <h1 className="max-w-[34ch] text-xl leading-snug text-paper sm:text-2xl">{home.heroStatement}</h1>
+        <h1 className="intro-fade max-w-[34ch] text-xl leading-snug text-paper sm:text-2xl">{home.heroStatement}</h1>
       </section>
 
       <main>
