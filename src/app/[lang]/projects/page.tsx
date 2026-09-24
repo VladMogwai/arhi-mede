@@ -1,38 +1,15 @@
 import type { Metadata } from "next";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { ProjectIndex } from "@/components/project/ProjectIndex";
+import { notFound } from "next/navigation";
+import { ProjectsPage, projectsMetadata } from "@/components/pages/ProjectsPage";
 import { isLocale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/get-dictionary";
-import { getProjects, projectCategories } from "@/lib/content/projects";
-import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/projects">): Promise<Metadata> {
   const { lang } = await params;
-  if (!isLocale(lang)) return {};
-  const { projects } = getDictionary(lang);
-  return pageMetadata({ locale: lang, path: "/projects", title: projects.metaTitle, description: projects.metaDescription });
+  return isLocale(lang) ? projectsMetadata(lang) : {};
 }
 
-export default async function ProjectsPage({ params }: PageProps<"/[lang]/projects">) {
+export default async function Page({ params }: PageProps<"/[lang]/projects">) {
   const { lang } = await params;
-  if (!isLocale(lang)) return null;
-  const { projects: text, common, categories } = getDictionary(lang);
-
-  return (
-    <>
-      <SiteHeader locale={lang} />
-      <main>
-        <header className="px-3 pt-20 pb-12 lg:grid lg:grid-cols-12 lg:gap-x-6">
-          <h1 className="font-display text-[clamp(3.5rem,9vw,7.5rem)] leading-[0.95] font-light lg:col-span-6 lg:col-start-2">{text.title}</h1>
-          <p className="mt-6 text-xl leading-snug lg:col-span-4 lg:col-start-8 lg:self-end">{text.intro}</p>
-        </header>
-        <ProjectIndex
-          locale={lang}
-          projects={getProjects(lang)}
-          categories={projectCategories.map((slug) => ({ slug, label: categories[slug] }))}
-          labels={{ all: text.filterAll, viewProject: common.viewProject, examplePhoto: common.examplePhoto }}
-        />
-      </main>
-    </>
-  );
+  if (!isLocale(lang)) notFound();
+  return <ProjectsPage locale={lang} />;
 }

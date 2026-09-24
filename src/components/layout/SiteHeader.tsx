@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { studio } from "@/config/site";
-import type { Locale } from "@/i18n/config";
+import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { SiteNav } from "./SiteNav";
 
@@ -17,15 +17,15 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale, overHero = false }: SiteHeaderProps) {
   const { nav } = getDictionary(locale);
   const links = [
-    { href: `/${locale}#studio`, label: nav.studio },
-    { href: `/${locale}/projects`, label: nav.projects },
+    { href: `${localePath(locale)}#studio`, label: nav.studio },
+    { href: localePath(locale, "/projects"), label: nav.projects },
     { href: "#contact", label: nav.contact },
   ];
 
   return (
     <>
       <Link
-        href={`/${locale}`}
+        href={localePath(locale)}
         aria-label={studio.name}
         className={`relative z-10 flex h-(--wordmark-height) items-center justify-between px-3 font-wordmark text-(length:--wordmark-size) leading-none font-normal uppercase ${
           overHero ? "text-paper" : "text-ink"

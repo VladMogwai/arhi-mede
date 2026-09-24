@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { studio } from "@/config/site";
-import type { Locale } from "@/i18n/config";
+import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 
 export function SiteFooter({ locale }: { locale: Locale }) {
@@ -24,13 +24,13 @@ export function SiteFooter({ locale }: { locale: Locale }) {
       <div className="grid gap-10 px-3 pt-20 pb-10 sm:grid-cols-2 lg:grid-cols-4">
         <ul className="font-display text-3xl leading-tight">
           <li>
-            <Link href={`/${locale}`}>{nav.home}</Link>
+            <Link href={localePath(locale)}>{nav.home}</Link>
           </li>
           <li>
-            <Link href={`/${locale}#studio`}>{nav.studio}</Link>
+            <Link href={`${localePath(locale)}#studio`}>{nav.studio}</Link>
           </li>
           <li>
-            <Link href={`/${locale}/projects`}>{nav.projects}</Link>
+            <Link href={localePath(locale, "/projects")}>{nav.projects}</Link>
           </li>
         </ul>
         <div>

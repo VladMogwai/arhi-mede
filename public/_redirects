@@ -1,1 +1,3 @@
-/  /ro  301
+# Romanian is served from the root; keep old /ro links working.
+/ro     /        301
+/ro/*   /:splat  301

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { siteUrl, studio } from "@/config/site";
-import { defaultLocale, locales, openGraphLocales, type Locale } from "@/i18n/config";
+import { defaultLocale, localePath, locales, openGraphLocales, type Locale } from "@/i18n/config";
 
 export function localizedUrl(locale: Locale, path = ""): string {
-  return `${siteUrl}/${locale}${path}`;
+  return `${siteUrl}${localePath(locale, path)}`;
 }
 
 /** hreflang map for a page that exists in every locale. */
