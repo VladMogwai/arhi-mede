@@ -47,7 +47,7 @@ export function SiteNav({ locale, links, labels, overHero }: SiteNavProps) {
         transparent ? "border-paper/40 text-paper [text-shadow:0_1px_10px_rgb(0_0_0/0.45)]" : "border-line bg-paper/95 text-ink backdrop-blur-sm"
       }`}
     >
-      <ul className="hidden gap-10 md:flex lg:gap-16">
+      <ul className="hidden gap-6 md:flex lg:gap-12">
         {links.map((link) => (
           <li key={link.href}>
             <NavLink href={link.href} label={link.label} />
