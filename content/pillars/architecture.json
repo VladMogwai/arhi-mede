@@ -1,0 +1,58 @@
+{
+  "ro": {
+    "name": "Architecture",
+    "letter": "A",
+    "division": "arhi",
+    "order": 1,
+    "title": "Proiectare arhitecturală",
+    "summary": "Proiectăm și coordonăm proiecte de arhitectură pentru clădiri noi, renovări și reconversii.",
+    "services": [
+      "Case",
+      "Clădiri publice și comerciale",
+      "Reconversii",
+      "Passive House",
+      "nZEB",
+      "Consultanță tehnică"
+    ],
+    "need": "Un proiect nou sau o renovare"
+  },
+  "en": {
+    "title": "Architectural Design",
+    "summary": "We design and coordinate architecture projects for new buildings, renovations and conversions.",
+    "services": [
+      "Houses",
+      "Public and commercial buildings",
+      "Conversions",
+      "Passive House",
+      "nZEB",
+      "Technical consultancy"
+    ],
+    "need": "A new building or renovation project"
+  },
+  "de": {
+    "title": "Architekturplanung",
+    "summary": "Wir planen und koordinieren Architekturprojekte für Neubauten, Sanierungen und Umnutzungen.",
+    "services": [
+      "Wohnhäuser",
+      "Öffentliche und gewerbliche Gebäude",
+      "Umnutzungen",
+      "Passivhaus",
+      "nZEB",
+      "Technische Beratung"
+    ],
+    "need": "Einen Neubau oder eine Sanierung"
+  },
+  "uk": {
+    "title": "Архітектурне проєктування",
+    "summary": "Проєктуємо й координуємо архітектурні проєкти нових будівель, реконструкцій і перепрофілювання.",
+    "services": [
+      "Будинки",
+      "Громадські та комерційні будівлі",
+      "Перепрофілювання",
+      "Passive House",
+      "nZEB",
+      "Технічні консультації"
+    ],
+    "need": "Новий проєкт або реконструкцію"
+  }
+}

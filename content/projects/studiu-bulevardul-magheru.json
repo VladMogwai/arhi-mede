@@ -2,6 +2,9 @@
   "ro": {
     "title": "Studiu: Bulevardul Magheru",
     "category": "studii",
+    "pillars": [
+      "research"
+    ],
     "order": 3,
     "featured": false,
     "location": "București",

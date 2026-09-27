@@ -2,6 +2,9 @@
   "ro": {
     "title": "Amenajare interioară la Râșnov",
     "category": "amenajare-interioara",
+    "pillars": [
+      "interior-design"
+    ],
     "order": 4,
     "featured": false,
     "location": "Râșnov",

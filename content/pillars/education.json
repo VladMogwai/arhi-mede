@@ -1,0 +1,58 @@
+{
+  "ro": {
+    "name": "Education",
+    "letter": "E",
+    "division": "mede",
+    "order": 8,
+    "title": "Transfer de cunoștințe",
+    "summary": "Formăm profesioniști și promovăm bunele practici.",
+    "services": [
+      "Cursuri",
+      "Workshopuri",
+      "Publicații",
+      "Conferințe",
+      "Școli de vară",
+      "Consultanță"
+    ],
+    "need": "Să învăț despre construcția circulară, Passive House și altele"
+  },
+  "en": {
+    "title": "Knowledge Transfer",
+    "summary": "We train professionals and promote good practice.",
+    "services": [
+      "Courses",
+      "Workshops",
+      "Publications",
+      "Conferences",
+      "Summer schools",
+      "Consultancy"
+    ],
+    "need": "To learn about circular construction, Passive House and more"
+  },
+  "de": {
+    "title": "Wissenstransfer",
+    "summary": "Wir bilden Fachleute weiter und fördern gute Praxis.",
+    "services": [
+      "Kurse",
+      "Workshops",
+      "Publikationen",
+      "Konferenzen",
+      "Sommerschulen",
+      "Beratung"
+    ],
+    "need": "Mehr über zirkuläres Bauen, Passivhaus und mehr lernen"
+  },
+  "uk": {
+    "title": "Передача знань",
+    "summary": "Навчаємо фахівців і поширюємо найкращі практики.",
+    "services": [
+      "Курси",
+      "Воркшопи",
+      "Публікації",
+      "Конференції",
+      "Літні школи",
+      "Консультації"
+    ],
+    "need": "Дізнатися про циркулярне будівництво, Passive House тощо"
+  }
+}

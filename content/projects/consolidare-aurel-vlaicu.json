@@ -2,6 +2,9 @@
   "ro": {
     "title": "Consolidare Aurel Vlaicu",
     "category": "consolidari-si-reabilitari-de-cladiri-existente",
+    "pillars": [
+      "heritage"
+    ],
     "order": 7,
     "featured": false,
     "location": "",

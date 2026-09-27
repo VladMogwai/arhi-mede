@@ -2,6 +2,9 @@
   "ro": {
     "title": "Casa cu cireș",
     "category": "constructii-noi",
+    "pillars": [
+      "architecture"
+    ],
     "order": 12,
     "featured": false,
     "location": "",

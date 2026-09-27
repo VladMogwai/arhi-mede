@@ -2,6 +2,10 @@
   "ro": {
     "title": "Casă pasivă – Corbeanca",
     "category": "constructii-noi",
+    "pillars": [
+      "architecture",
+      "materials"
+    ],
     "order": 9,
     "featured": true,
     "location": "Corbeanca",

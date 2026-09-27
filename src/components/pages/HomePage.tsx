@@ -11,6 +11,7 @@ import { heroSlides, placeholderPhotos } from "@/config/placeholder-images";
 import { studio } from "@/config/site";
 import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { divisions, getPillars, pillarPath } from "@/lib/content/pillars";
 import { getFeaturedProject, getProjects } from "@/lib/content/projects";
 import { getTeam } from "@/lib/content/team";
 import { pageMetadata } from "@/lib/seo";
@@ -51,7 +52,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       <main>
         <StudioSection locale={locale} />
-        <ServicesSection locale={locale} />
+        <NeedSection locale={locale} />
         <ProjectsSection locale={locale} />
         <Photo
           source={{ kind: "example", pexelsId: placeholderPhotos.landscape }}
@@ -73,14 +74,19 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 function StudioSection({ locale }: { locale: Locale }) {
-  const { home, common } = getDictionary(locale);
+  const { home, common, nav } = getDictionary(locale);
   return (
     <section id="studio" className="scroll-mt-(--nav-height) px-3 pt-32 lg:grid lg:grid-cols-12 lg:gap-x-6">
       <div className="lg:col-span-10 lg:col-start-2">
         <SectionTitle>{home.studio.title}</SectionTitle>
       </div>
       <p className="mt-8 text-xl leading-snug indent-[25%] sm:text-2xl lg:col-span-6 lg:col-start-4">{home.studio.lead}</p>
-      <Caption className="mt-10 lg:col-span-2 lg:col-start-1 lg:row-start-3 lg:self-end">{home.studio.caption}</Caption>
+      <div className="mt-10 lg:col-span-2 lg:col-start-1 lg:row-start-3 lg:self-end">
+        <Caption>{home.studio.caption}</Caption>
+        <ArrowLink href={localePath(locale, "/about")} className="mt-8">
+          {nav.about}
+        </ArrowLink>
+      </div>
       <Photo
         source={{ kind: "example", pexelsId: placeholderPhotos.studio }}
         alt=""
@@ -92,20 +98,41 @@ function StudioSection({ locale }: { locale: Locale }) {
   );
 }
 
-function ServicesSection({ locale }: { locale: Locale }) {
-  const { home } = getDictionary(locale);
+/** "I need…": each visitor task leads to the ARHI MEDE direction that handles it. */
+function NeedSection({ locale }: { locale: Locale }) {
+  const { home, nav, divisions: divisionText } = getDictionary(locale);
   return (
     <section className="px-3 pt-32 lg:grid lg:grid-cols-12 lg:gap-x-6">
-      <h2 className="caption lg:col-span-2 lg:col-start-2">{home.services.title}</h2>
-      <ol className="mt-6 lg:col-span-7 lg:col-start-4 lg:mt-0">
-        {home.services.items.map((service, index) => (
-          <li key={service.title} className="grid grid-cols-[3rem_1fr] gap-y-2 border-t border-line py-6 last:border-b sm:grid-cols-[4rem_1fr_1fr] sm:gap-x-6">
-            <span className="caption pt-2">{String(index + 1).padStart(2, "0")}</span>
-            <h3 className="font-display text-3xl leading-tight">{service.title}</h3>
-            <p className="col-start-2 text-sm leading-relaxed text-muted sm:col-start-3 sm:pt-2">{service.text}</p>
-          </li>
+      <div className="lg:col-span-10 lg:col-start-2">
+        <SectionTitle>{home.need.title}</SectionTitle>
+      </div>
+      <Caption className="mt-10 lg:col-span-2 lg:col-start-1 lg:row-start-2">{home.need.caption}</Caption>
+      <div className="mt-12 grid gap-12 md:grid-cols-2 lg:col-span-8 lg:col-start-4 lg:row-start-2">
+        {divisions.map((division) => (
+          <div key={division}>
+            <p className="caption flex justify-between border-b border-ink pb-2">
+              <Link href={localePath(locale, `/${division}`)} className="hover:underline">
+                {nav[division]}
+              </Link>
+              <span className="text-muted">{divisionText[division].description}</span>
+            </p>
+            <ul>
+              {getPillars(locale, division).map((pillar) => (
+                <li key={pillar.slug} className="border-b border-line">
+                  <Link href={pillarPath(locale, pillar)} className="group grid grid-cols-[2.5rem_1fr_auto] items-baseline gap-3 py-4">
+                    <span className="font-wordmark text-2xl leading-none">{pillar.letter}</span>
+                    <span>
+                      <span className="block text-lg leading-snug transition-transform duration-300 group-hover:translate-x-1">{pillar.need}</span>
+                      <span className="caption mt-1 block text-muted">{pillar.name}</span>
+                    </span>
+                    <ArrowIcon className="self-center transition-transform duration-300 group-hover:rotate-45" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ol>
+      </div>
     </section>
   );
 }

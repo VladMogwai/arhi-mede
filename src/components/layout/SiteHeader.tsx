@@ -17,8 +17,10 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale, overHero = false }: SiteHeaderProps) {
   const { nav } = getDictionary(locale);
   const links = [
-    { href: `${localePath(locale)}#studio`, label: nav.studio },
+    { href: localePath(locale, "/arhi"), label: nav.arhi },
+    { href: localePath(locale, "/mede"), label: nav.mede },
     { href: localePath(locale, "/projects"), label: nav.projects },
+    { href: localePath(locale, "/about"), label: nav.about },
     { href: "#contact", label: nav.contact },
   ];
 
@@ -42,7 +44,7 @@ export function SiteHeader({ locale, overHero = false }: SiteHeaderProps) {
           </span>
         ))}
       </Link>
-      <SiteNav locale={locale} links={links} overHero={overHero} />
+      <SiteNav locale={locale} links={links} labels={{ menu: nav.menu, close: nav.close }} overHero={overHero} />
     </>
   );
 }

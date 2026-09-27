@@ -1,0 +1,286 @@
+{
+  "ro": {
+    "title": "Construim locuri mai bune. Prelungim viața a ceea ce există deja.",
+    "intro": "ARHI MEDE este o practică multidisciplinară care reunește arhitectura, cercetarea, patrimoniul, designul interior și serviciile de circularitate pentru a crea medii construite atent gândite, reziliente și responsabile față de resurse.\n\nLucrăm pe întregul ciclu de viață al mediului construit: de la proiectarea clădirilor noi și restaurarea celor istorice până la recuperarea materialelor valoroase și oferirea unei a doua vieți.",
+    "whatTitle": "Ce facem",
+    "whatIntro": "Activitatea noastră este organizată în două divizii complementare.",
+    "arhiItems": [
+      "Proiectăm clădiri noi",
+      "Proiectăm interioare",
+      "Restaurăm clădiri istorice",
+      "Oferim cercetare și consultanță de specialitate"
+    ],
+    "medeItems": [
+      "Evaluăm materiale pentru reutilizare",
+      "Recuperăm materiale de construcție",
+      "Furnizăm materiale recuperate",
+      "Proiectăm produse circulare și organizăm cursuri"
+    ],
+    "divisionsNote": "ARHI se ocupă de crearea, restaurarea și îmbunătățirea clădirilor și spațiilor.\nMEDE se ocupă de prelungirea vieții materialelor, produselor și resurselor prin soluții circulare.\nÎmpreună oferă o abordare integrată a mediului construit.",
+    "howTitle": "Cum lucrăm cu dumneavoastră",
+    "howText": "Fiecare proiect este diferit.\n\nFie că plănuiți o construcție nouă, restaurați o clădire de patrimoniu, doriți să recuperați materiale valoroase sau căutați produse recuperate, reunim expertiza potrivită pentru proiectul dumneavoastră.\n\nPutem interveni în orice etapă a procesului.",
+    "helpColumns": [
+      "Dacă doriți să…",
+      "Vă putem ajuta să…"
+    ],
+    "help": [
+      [
+        "construiți un proiect nou",
+        "îl proiectați și îl coordonați"
+      ],
+      [
+        "transformați o clădire existentă",
+        "dezvoltați soluții tehnice și de design"
+      ],
+      [
+        "restaurați patrimoniul",
+        "documentați, conservați și coordonați intervențiile"
+      ],
+      [
+        "recuperați materiale valoroase",
+        "le evaluați, le recuperați și le pregătiți pentru reutilizare"
+      ],
+      [
+        "găsiți materiale recuperate",
+        "găsiți și procurați produsele potrivite"
+      ],
+      [
+        "creați produse circulare",
+        "proiectați mobilier, obiecte și soluții la comandă"
+      ],
+      [
+        "dezvoltați cunoștințe",
+        "participați la cursuri, workshopuri și formare profesională"
+      ]
+    ],
+    "whyTitle": "De ce ne aleg clienții",
+    "whyText": "Nu vedem arhitectura, patrimoniul, materialele și designul ca discipline separate.\n\nLe vedem ca părți ale aceluiași sistem.\n\nCombinând aceste perspective, îi ajutăm pe clienți să folosească mai bine resursele existente, să reducă risipa și să creeze proiecte funcționale, responsabile și durabile.",
+    "expertiseTitle": "Expertiza noastră",
+    "expertise": [
+      "Arhitectură",
+      "Design interior",
+      "Conservarea patrimoniului",
+      "Cercetare și cunoaștere aplicată",
+      "Evaluarea materialelor",
+      "Recuperarea materialelor",
+      "Marketplace digital",
+      "Design de mobilier și produs",
+      "Educație și formare"
+    ],
+    "ctaTitle": "Să construim împreună",
+    "ctaText": "Fie că dezvoltați un proiect nou, restaurați o clădire existentă sau căutați materiale recuperate, vom discuta cu plăcere cum vă putem ajuta."
+  },
+  "en": {
+    "title": "Building better places. Extending the life of what already exists.",
+    "intro": "ARHI MEDE is a multidisciplinary practice bringing together architecture, research, heritage, interior design and circularity services to create thoughtful, resilient and resource-conscious built environments.\n\nWe work across the entire lifecycle of the built environment, from designing new buildings and restoring historic ones to recovering valuable materials and giving them a second life.",
+    "whatTitle": "What we do",
+    "whatIntro": "Our work is organised around two complementary divisions.",
+    "arhiItems": [
+      "Design new buildings",
+      "Design interiors",
+      "Restore historic buildings",
+      "Provide research & specialist advice"
+    ],
+    "medeItems": [
+      "Assess materials for reuse",
+      "Recover building materials",
+      "Supply reclaimed materials",
+      "Design circular products and deliver training"
+    ],
+    "divisionsNote": "ARHI focuses on creating, restoring and improving buildings and spaces.\nMEDE focuses on extending the life of materials, products and resources through circular solutions.\nTogether, they provide an integrated approach to the built environment.",
+    "howTitle": "How we work with you",
+    "howText": "Every project is different.\n\nWhether you are planning a new development, restoring a heritage building, looking to recover valuable materials or searching for reclaimed products, we assemble the right expertise to support your project.\n\nWe can become involved at any stage of the process.",
+    "helpColumns": [
+      "If you want to…",
+      "We can help you…"
+    ],
+    "help": [
+      [
+        "build a new project",
+        "design and coordinate it"
+      ],
+      [
+        "transform an existing building",
+        "develop technical and design solutions"
+      ],
+      [
+        "restore heritage",
+        "document, conserve and coordinate interventions"
+      ],
+      [
+        "recover valuable materials",
+        "assess, recover and prepare them for reuse"
+      ],
+      [
+        "source reclaimed materials",
+        "find and supply suitable products"
+      ],
+      [
+        "create circular products",
+        "design furniture, objects and custom solutions"
+      ],
+      [
+        "build knowledge",
+        "deliver training, workshops and professional education"
+      ]
+    ],
+    "whyTitle": "Why clients choose us",
+    "whyText": "We do not see architecture, heritage, materials and design as separate disciplines.\n\nWe see them as parts of the same system.\n\nBy combining these perspectives, we help clients make better use of existing resources, reduce waste and create projects that are functional, responsible and built to last.",
+    "expertiseTitle": "Our expertise",
+    "expertise": [
+      "Architecture",
+      "Interior Design",
+      "Heritage Conservation",
+      "Research & Applied Knowledge",
+      "Material Assessment",
+      "Material Recovery",
+      "Digital Marketplace",
+      "Furniture & Product Design",
+      "Education & Training"
+    ],
+    "ctaTitle": "Let's build together",
+    "ctaText": "Whether you are developing a new project, restoring an existing building or looking for reclaimed materials, we would be happy to discuss how we can help."
+  },
+  "de": {
+    "title": "Bessere Orte bauen. Dem Bestehenden ein längeres Leben geben.",
+    "intro": "ARHI MEDE ist ein interdisziplinäres Büro, das Architektur, Forschung, Denkmalpflege, Innenarchitektur und Leistungen der Kreislaufwirtschaft verbindet, um durchdachte, widerstandsfähige und ressourcenschonende gebaute Umwelten zu schaffen.\n\nWir arbeiten über den gesamten Lebenszyklus der gebauten Umwelt – von der Planung neuer Gebäude und der Restaurierung historischer Bauten bis zur Bergung wertvoller Materialien, denen wir ein zweites Leben geben.",
+    "whatTitle": "Was wir tun",
+    "whatIntro": "Unsere Arbeit gliedert sich in zwei sich ergänzende Bereiche.",
+    "arhiItems": [
+      "Neubauten planen",
+      "Innenräume gestalten",
+      "Historische Gebäude restaurieren",
+      "Forschung und Fachberatung anbieten"
+    ],
+    "medeItems": [
+      "Materialien auf Wiederverwendung prüfen",
+      "Baumaterialien bergen",
+      "Geborgene Materialien liefern",
+      "Zirkuläre Produkte entwerfen und Schulungen anbieten"
+    ],
+    "divisionsNote": "ARHI schafft, restauriert und verbessert Gebäude und Räume.\nMEDE verlängert das Leben von Materialien, Produkten und Ressourcen durch zirkuläre Lösungen.\nGemeinsam bieten sie einen ganzheitlichen Ansatz für die gebaute Umwelt.",
+    "howTitle": "Wie wir mit Ihnen arbeiten",
+    "howText": "Jedes Projekt ist anders.\n\nOb Sie einen Neubau planen, ein Baudenkmal restaurieren, wertvolle Materialien bergen oder geborgene Produkte suchen – wir stellen die passende Expertise für Ihr Projekt zusammen.\n\nWir können in jeder Phase des Prozesses einsteigen.",
+    "helpColumns": [
+      "Wenn Sie …",
+      "können wir Ihnen helfen, …"
+    ],
+    "help": [
+      [
+        "ein neues Projekt bauen wollen",
+        "es zu planen und zu koordinieren"
+      ],
+      [
+        "ein bestehendes Gebäude umbauen wollen",
+        "technische und gestalterische Lösungen zu entwickeln"
+      ],
+      [
+        "ein Baudenkmal restaurieren wollen",
+        "Eingriffe zu dokumentieren, zu erhalten und zu koordinieren"
+      ],
+      [
+        "wertvolle Materialien bergen wollen",
+        "sie zu bewerten, zu bergen und für die Wiederverwendung vorzubereiten"
+      ],
+      [
+        "geborgene Materialien suchen",
+        "passende Produkte zu finden und zu liefern"
+      ],
+      [
+        "zirkuläre Produkte schaffen wollen",
+        "Möbel, Objekte und Sonderlösungen zu entwerfen"
+      ],
+      [
+        "Wissen aufbauen wollen",
+        "Schulungen, Workshops und Weiterbildung zu erhalten"
+      ]
+    ],
+    "whyTitle": "Warum Kunden uns wählen",
+    "whyText": "Architektur, Denkmalpflege, Materialien und Design sind für uns keine getrennten Disziplinen.\n\nWir sehen sie als Teile desselben Systems.\n\nIndem wir diese Perspektiven verbinden, helfen wir unseren Kunden, vorhandene Ressourcen besser zu nutzen, Abfall zu vermeiden und Projekte zu schaffen, die funktional, verantwortungsvoll und langlebig sind.",
+    "expertiseTitle": "Unsere Kompetenzen",
+    "expertise": [
+      "Architektur",
+      "Innenarchitektur",
+      "Denkmalpflege",
+      "Forschung & angewandtes Wissen",
+      "Materialbewertung",
+      "Materialrückgewinnung",
+      "Digitaler Marktplatz",
+      "Möbel- & Produktdesign",
+      "Aus- & Weiterbildung"
+    ],
+    "ctaTitle": "Lassen Sie uns gemeinsam bauen",
+    "ctaText": "Ob Sie ein neues Projekt entwickeln, ein bestehendes Gebäude restaurieren oder geborgene Materialien suchen – wir besprechen gern, wie wir Ihnen helfen können."
+  },
+  "uk": {
+    "title": "Створюємо кращі місця. Подовжуємо життя тому, що вже існує.",
+    "intro": "ARHI MEDE — міждисциплінарна практика, що поєднує архітектуру, дослідження, спадщину, дизайн інтер’єру та циркулярні послуги, аби створювати продумане, стійке й відповідальне до ресурсів середовище.\n\nМи працюємо з усім життєвим циклом забудованого середовища: від проєктування нових будівель і реставрації історичних до відновлення цінних матеріалів і надання їм другого життя.",
+    "whatTitle": "Що ми робимо",
+    "whatIntro": "Наша робота побудована навколо двох напрямів, що доповнюють один одного.",
+    "arhiItems": [
+      "Проєктуємо нові будівлі",
+      "Проєктуємо інтер’єри",
+      "Реставруємо історичні будівлі",
+      "Проводимо дослідження та надаємо фахові консультації"
+    ],
+    "medeItems": [
+      "Оцінюємо матеріали для повторного використання",
+      "Відновлюємо будівельні матеріали",
+      "Постачаємо відновлені матеріали",
+      "Проєктуємо циркулярні продукти та навчаємо"
+    ],
+    "divisionsNote": "ARHI створює, реставрує та вдосконалює будівлі й простори.\nMEDE подовжує життя матеріалів, продуктів і ресурсів завдяки циркулярним рішенням.\nРазом вони пропонують цілісний підхід до забудованого середовища.",
+    "howTitle": "Як ми працюємо з вами",
+    "howText": "Кожен проєкт інший.\n\nПлануєте нове будівництво, реставруєте пам’ятку, хочете відновити цінні матеріали чи шукаєте відновлені продукти — ми зберемо потрібну експертизу для вашого проєкту.\n\nМи можемо долучитися на будь-якому етапі.",
+    "helpColumns": [
+      "Якщо ви хочете…",
+      "ми допоможемо…"
+    ],
+    "help": [
+      [
+        "збудувати новий проєкт",
+        "спроєктувати й скоординувати його"
+      ],
+      [
+        "перетворити наявну будівлю",
+        "розробити технічні та дизайнерські рішення"
+      ],
+      [
+        "відреставрувати спадщину",
+        "задокументувати, зберегти й скоординувати втручання"
+      ],
+      [
+        "відновити цінні матеріали",
+        "оцінити, відновити й підготувати їх до повторного використання"
+      ],
+      [
+        "знайти відновлені матеріали",
+        "підібрати й постачити відповідні продукти"
+      ],
+      [
+        "створити циркулярні продукти",
+        "спроєктувати меблі, предмети й рішення на замовлення"
+      ],
+      [
+        "здобути знання",
+        "пройти навчання, воркшопи та професійні курси"
+      ]
+    ],
+    "whyTitle": "Чому клієнти обирають нас",
+    "whyText": "Ми не вважаємо архітектуру, спадщину, матеріали й дизайн окремими дисциплінами.\n\nДля нас це частини однієї системи.\n\nПоєднуючи ці погляди, ми допомагаємо клієнтам краще використовувати наявні ресурси, зменшувати відходи та створювати функціональні, відповідальні й довговічні проєкти.",
+    "expertiseTitle": "Наша експертиза",
+    "expertise": [
+      "Архітектура",
+      "Дизайн інтер’єру",
+      "Збереження спадщини",
+      "Дослідження та прикладні знання",
+      "Оцінка матеріалів",
+      "Відновлення матеріалів",
+      "Цифровий маркетплейс",
+      "Дизайн меблів і продуктів",
+      "Освіта та навчання"
+    ],
+    "ctaTitle": "Будуймо разом",
+    "ctaText": "Розробляєте новий проєкт, реставруєте наявну будівлю чи шукаєте відновлені матеріали — ми охоче обговоримо, як можемо допомогти."
+  }
+}

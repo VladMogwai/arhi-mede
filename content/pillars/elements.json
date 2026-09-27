@@ -1,0 +1,62 @@
+{
+  "ro": {
+    "name": "Elements",
+    "letter": "E",
+    "division": "mede",
+    "order": 6,
+    "title": "Marketplace digital",
+    "summary": "Punem în circulație materiale și elemente recuperate printr-o platformă digitală și depozite dedicate.",
+    "services": [
+      "Catalog digital",
+      "Căutare",
+      "Rezervare",
+      "Disponibilitate",
+      "Vânzare",
+      "Fotografii",
+      "Fișe tehnice"
+    ],
+    "need": "Să cumpăr materiale și elemente arhitecturale recuperate"
+  },
+  "en": {
+    "title": "Digital Marketplace",
+    "summary": "We put reclaimed materials and elements back into circulation through a digital platform and dedicated depots.",
+    "services": [
+      "Digital catalogue",
+      "Search",
+      "Reservation",
+      "Availability",
+      "Sales",
+      "Photographs",
+      "Technical data sheets"
+    ],
+    "need": "To buy reclaimed materials and architectural elements"
+  },
+  "de": {
+    "title": "Digitaler Marktplatz",
+    "summary": "Wir bringen geborgene Materialien und Bauteile über eine digitale Plattform und eigene Lager wieder in Umlauf.",
+    "services": [
+      "Digitaler Katalog",
+      "Suche",
+      "Reservierung",
+      "Verfügbarkeit",
+      "Verkauf",
+      "Fotos",
+      "Technische Datenblätter"
+    ],
+    "need": "Geborgene Materialien und Bauteile kaufen"
+  },
+  "uk": {
+    "title": "Цифровий маркетплейс",
+    "summary": "Повертаємо в обіг відновлені матеріали й елементи через цифрову платформу та власні склади.",
+    "services": [
+      "Цифровий каталог",
+      "Пошук",
+      "Бронювання",
+      "Наявність",
+      "Продаж",
+      "Фотографії",
+      "Технічні паспорти"
+    ],
+    "need": "Купити відновлені матеріали та архітектурні елементи"
+  }
+}

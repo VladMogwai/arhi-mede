@@ -4,6 +4,8 @@ import { readEntries } from "./files";
 export type ProjectData = {
   title: string;
   category: string;
+  /** Slugs of the ARHI MEDE directions (content/pillars) this project illustrates. */
+  pillars: string[];
   order: number;
   featured: boolean;
   location: string;
@@ -41,4 +43,8 @@ export function getProject(locale: Locale, slug: string): Project | undefined {
 export function getFeaturedProject(locale: Locale): Project {
   const projects = getProjects(locale);
   return projects.find((project) => project.featured) ?? projects[0];
+}
+
+export function getProjectsForPillar(locale: Locale, pillar: string): Project[] {
+  return getProjects(locale).filter((project) => project.pillars.includes(pillar));
 }

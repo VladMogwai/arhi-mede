@@ -3,10 +3,14 @@ import type { Dictionary } from "./ro";
 export const en: Dictionary = {
   languageName: "English",
   nav: {
-    studio: "Studio",
-    projects: "Projects",
-    contact: "Contact",
     home: "Home",
+    arhi: "ARHI",
+    mede: "MEDE",
+    projects: "Projects",
+    about: "About",
+    contact: "Contact",
+    menu: "Menu",
+    close: "Close",
   },
   common: {
     examplePhoto: "Example photo",
@@ -24,34 +28,28 @@ export const en: Dictionary = {
     studii: "Studies",
   },
   home: {
-    metaTitle: "Arhi Mede Studio — architecture practice in Bucharest",
+    metaTitle: "Arhi Mede — architecture, heritage and circular materials",
     metaDescription:
-      "Architecture practice in Bucharest: certified passive houses, structural retrofit and restoration of existing buildings, interiors and urban studies.",
-    heroStatement:
-      "An architecture practice in Bucharest. We design passive houses, bring old buildings back to life and create healthy spaces in harmony with their surroundings.",
+      "A multidisciplinary practice in Bucharest: architecture, research, heritage, interior design, material assessment and recovery, circular design and education.",
+    heroStatement: "Building better places. Extending the life of what already exists.",
     studio: {
       title: "The studio",
-      lead: "We are an architecture practice where a project is more than a drawing and a file of paperwork. We create quality spaces where our clients can live comfortably, healthily and in harmony with the environment. Architecture shapes who we are, influences our days and defines our social relationships.",
+      lead: "ARHI MEDE is a multidisciplinary practice bringing together architecture, research, heritage, interior design and circularity services to create thoughtful, resilient and resource-conscious built environments.",
       caption: "The first certified passive houses around Bucharest, since 2015.",
     },
-    services: {
-      title: "What we do",
-      items: [
-        { title: "New buildings", text: "Design and site supervision, from the brief to a house that is lived in." },
-        { title: "Retrofit & restoration", text: "Existing and heritage buildings, with respect for the original fabric." },
-        { title: "Interiors", text: "Classic or contemporary, with every detail followed through to completion." },
-        { title: "Studies", text: "Ideas and proposals for the city, public space and landscape." },
-      ],
+    need: {
+      title: "I need…",
+      caption: "Choose what you are looking for and we will show you the right direction.",
     },
     featured: { label: "Featured project" },
     approach: {
-      title: "Approach",
-      text: "Our projects answer our clients' briefs while respecting the neighbours, the community, the environment and the landscape. A good investment calls for responsible architecture that balances cost, sustainability and social context.",
-      caption: "A smart investment starts with a well-defined brief.",
+      title: "Why us",
+      text: "We do not see architecture, heritage, materials and design as separate disciplines, but as parts of the same system. That is how we help clients make better use of existing resources, reduce waste and create projects that are functional, responsible and built to last.",
+      caption: "We can become involved at any stage of a project.",
       points: [
         { title: "Passive standard", text: "Houses certified by the Passive House Institute in Darmstadt, built on CLT timber structures." },
         { title: "Heritage", text: "Restoration that keeps the original material and local craftsmanship." },
-        { title: "Context", text: "Buildings that sit quietly in their village, city and landscape." },
+        { title: "A second life", text: "Timber reclaimed from demolitions, reused in new houses and restorations." },
       ],
     },
     team: {
@@ -60,9 +58,33 @@ export const en: Dictionary = {
     },
     cta: {
       title: "Have a project in mind?",
-      text: "Tell us about the site, the building or the idea. We will reply with the next steps and a quote.",
+      text: "Tell us about the site, the building, the materials or the idea. We will reply with the next steps and a quote.",
       button: "Write to us",
     },
+  },
+  divisions: {
+    label: "Division",
+    arhi: {
+      description: "We create, restore and improve buildings and spaces.",
+      metaDescription: "ARHI: architecture, research, heritage and interior design.",
+    },
+    mede: {
+      description: "We extend the life of materials, products and resources through circular solutions.",
+      metaDescription: "MEDE: material assessment, reclaimed elements, circular design and education.",
+    },
+  },
+  pillar: {
+    services: "What it includes",
+    projects: "Projects",
+    noProjects: "Projects for this direction will be added soon.",
+    next: "Next direction",
+    ctaTitle: "Shall we talk about your project?",
+    ctaButton: "Write to us",
+  },
+  about: {
+    metaTitle: "About",
+    metaDescription: "ARHI MEDE brings together architecture, research, heritage, interior design and circularity services.",
+    label: "About",
   },
   projects: {
     metaTitle: "Projects",
@@ -72,7 +94,7 @@ export const en: Dictionary = {
     filterAll: "All",
   },
   footer: {
-    tagline: "Architecture practice",
+    tagline: "Architecture · Materials",
     address: "Address",
     contact: "Contact",
     hours: "Opening hours",

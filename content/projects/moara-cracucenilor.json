@@ -2,6 +2,10 @@
   "ro": {
     "title": "Moara Crăcucenilor",
     "category": "consolidari-si-reabilitari-de-cladiri-existente",
+    "pillars": [
+      "heritage",
+      "materials"
+    ],
     "order": 5,
     "featured": false,
     "location": "Ponoarele",

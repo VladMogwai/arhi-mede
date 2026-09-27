@@ -1,10 +1,14 @@
 export const ro = {
   languageName: "Română",
   nav: {
-    studio: "Studioul",
-    projects: "Proiecte",
-    contact: "Contact",
     home: "Acasă",
+    arhi: "ARHI",
+    mede: "MEDE",
+    projects: "Proiecte",
+    about: "Despre",
+    contact: "Contact",
+    menu: "Meniu",
+    close: "Închide",
   },
   common: {
     examplePhoto: "Foto exemplu",
@@ -22,34 +26,28 @@ export const ro = {
     studii: "Studii",
   } as Record<string, string>,
   home: {
-    metaTitle: "Arhi Mede Studio — birou de arhitectură în București",
+    metaTitle: "Arhi Mede — arhitectură, patrimoniu și materiale circulare",
     metaDescription:
-      "Birou de arhitectură din București: case pasive certificate, consolidări și reabilitări de clădiri existente, amenajări interioare și studii urbane.",
-    heroStatement:
-      "Birou de arhitectură din București. Proiectăm case pasive, reabilităm clădiri vechi și dăm viață unor spații sănătoase, în armonie cu mediul.",
+      "Practică multidisciplinară din București: arhitectură, cercetare, patrimoniu, design interior, evaluarea și recuperarea materialelor, design circular și educație.",
+    heroStatement: "Construim locuri mai bune. Prelungim viața a ceea ce există deja.",
     studio: {
       title: "Studioul",
-      lead: "Este un birou de arhitectură unde proiectele sunt mai mult decât un desen și un dosar pe hârtie. Un birou care dă viață unor spații de calitate, în care clienții să locuiască confortabil, sănătoși și în armonie cu mediul. Arhitectura ne modelează felul de a fi, ne influențează stările zilnice, ne definește relațiile sociale.",
+      lead: "ARHI MEDE este o practică multidisciplinară care reunește arhitectura, cercetarea, patrimoniul, designul interior și serviciile de circularitate pentru a crea medii construite atent gândite, reziliente și responsabile față de resurse.",
       caption: "Primele case certificate pasiv din zona Bucureștiului, din 2015.",
     },
-    services: {
-      title: "Ce facem",
-      items: [
-        { title: "Construcții noi", text: "Proiectare și urmărirea execuției, de la tema de proiectare la casa locuită." },
-        { title: "Consolidări și reabilitări", text: "Clădiri existente și de patrimoniu, cu respect pentru materialul originar." },
-        { title: "Amenajări interioare", text: "Clasice sau moderne, cu fiecare detaliu urmărit până la final." },
-        { title: "Studii", text: "Idei și propuneri pentru oraș, spațiu public și peisaj." },
-      ],
+    need: {
+      title: "Am nevoie de…",
+      caption: "Alegeți ce vă trebuie și vă arătăm direcția potrivită.",
     },
     featured: { label: "Proiect recomandat" },
     approach: {
-      title: "Abordarea",
-      text: "Proiectele noastre răspund temelor beneficiarilor, dar respectă și vecinii, comunitatea, mediul, peisajul. Calitatea investiției presupune o arhitectură responsabilă, care realizează un echilibru între investiția economică, sustenabilitate și contextul social.",
-      caption: "O investiție inteligentă începe cu o temă bine definită.",
+      title: "De ce noi",
+      text: "Nu vedem arhitectura, patrimoniul, materialele și designul ca discipline separate, ci ca părți ale aceluiași sistem. Așa îi ajutăm pe clienți să folosească mai bine resursele existente, să reducă risipa și să creeze proiecte funcționale, responsabile și durabile.",
+      caption: "Putem interveni în orice etapă a proiectului.",
       points: [
         { title: "Standard pasiv", text: "Case certificate de Passive House Institute din Darmstadt, pe structură din lemn CLT." },
         { title: "Patrimoniu", text: "Reabilitări care păstrează materialul originar și meșteșugul local." },
-        { title: "Context", text: "Clădiri care se integrează discret în sat, în oraș și în peisaj." },
+        { title: "A doua viață", text: "Lemn recuperat din demolări, refolosit în case noi și în restaurări." },
       ],
     },
     team: {
@@ -58,9 +56,33 @@ export const ro = {
     },
     cta: {
       title: "Aveți un proiect?",
-      text: "Spuneți-ne despre teren, clădire sau idee. Vă răspundem cu pașii următori și o ofertă.",
+      text: "Spuneți-ne despre teren, clădire, materiale sau idee. Vă răspundem cu pașii următori și o ofertă.",
       button: "Scrieți-ne",
     },
+  },
+  divisions: {
+    label: "Divizia",
+    arhi: {
+      description: "Creăm, restaurăm și îmbunătățim clădiri și spații.",
+      metaDescription: "ARHI: arhitectură, cercetare, patrimoniu și design interior.",
+    },
+    mede: {
+      description: "Prelungim viața materialelor, produselor și resurselor prin soluții circulare.",
+      metaDescription: "MEDE: evaluarea materialelor, elemente recuperate, design circular și educație.",
+    },
+  },
+  pillar: {
+    services: "Ce includem",
+    projects: "Proiecte",
+    noProjects: "Proiectele pentru această direcție vor fi adăugate în curând.",
+    next: "Direcția următoare",
+    ctaTitle: "Vorbim despre proiectul dumneavoastră?",
+    ctaButton: "Scrieți-ne",
+  },
+  about: {
+    metaTitle: "Despre noi",
+    metaDescription: "ARHI MEDE reunește arhitectura, cercetarea, patrimoniul, designul interior și serviciile de circularitate.",
+    label: "Despre noi",
   },
   projects: {
     metaTitle: "Proiecte",
@@ -70,7 +92,7 @@ export const ro = {
     filterAll: "Toate",
   },
   footer: {
-    tagline: "Birou de arhitectură",
+    tagline: "Arhitectură · Materiale",
     address: "Adresa",
     contact: "Contact",
     hours: "Program",

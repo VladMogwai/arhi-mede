@@ -1,0 +1,66 @@
+{
+  "ro": {
+    "name": "Design",
+    "letter": "D",
+    "division": "mede",
+    "order": 7,
+    "title": "Mobilier, obiecte și produse circulare",
+    "summary": "Creăm, restaurăm și dezvoltăm obiecte și produse pornind de la materiale recuperate sau resurse naturale.",
+    "services": [
+      "Mobilier",
+      "Corpuri de iluminat",
+      "Obiecte",
+      "Mobilier restaurat",
+      "Mobilier reinterpretat",
+      "Produse circulare",
+      "Colecții",
+      "Prototipuri"
+    ],
+    "need": "Să comand sau să descopăr mobilier, iluminat și obiecte"
+  },
+  "en": {
+    "title": "Furniture, Objects & Circular Products",
+    "summary": "We create, restore and develop objects and products from reclaimed materials or natural resources.",
+    "services": [
+      "Furniture",
+      "Lighting",
+      "Objects",
+      "Restored furniture",
+      "Reinterpreted furniture",
+      "Circular products",
+      "Collections",
+      "Prototypes"
+    ],
+    "need": "To commission, design or discover furniture, lighting and objects"
+  },
+  "de": {
+    "title": "Möbel, Objekte & zirkuläre Produkte",
+    "summary": "Wir entwerfen, restaurieren und entwickeln Objekte und Produkte aus geborgenen Materialien oder natürlichen Rohstoffen.",
+    "services": [
+      "Möbel",
+      "Leuchten",
+      "Objekte",
+      "Restaurierte Möbel",
+      "Neu interpretierte Möbel",
+      "Zirkuläre Produkte",
+      "Kollektionen",
+      "Prototypen"
+    ],
+    "need": "Möbel, Leuchten und Objekte beauftragen oder entdecken"
+  },
+  "uk": {
+    "title": "Меблі, предмети та циркулярні продукти",
+    "summary": "Створюємо, реставруємо й розробляємо предмети та продукти з відновлених матеріалів або природних ресурсів.",
+    "services": [
+      "Меблі",
+      "Світильники",
+      "Предмети",
+      "Відреставровані меблі",
+      "Переосмислені меблі",
+      "Циркулярні продукти",
+      "Колекції",
+      "Прототипи"
+    ],
+    "need": "Замовити або знайти меблі, світильники й предмети"
+  }
+}

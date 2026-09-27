@@ -1,0 +1,54 @@
+{
+  "ro": {
+    "name": "Heritage",
+    "letter": "H",
+    "division": "arhi",
+    "order": 3,
+    "title": "Conservare și reconversie",
+    "summary": "Conservăm, documentăm și punem în valoare patrimoniul construit.",
+    "services": [
+      "Restaurare",
+      "Reconversie (adaptive reuse)",
+      "Documentare",
+      "Consultanță pentru monumente",
+      "Recuperarea elementelor istorice"
+    ],
+    "need": "Să restaurez o clădire istorică"
+  },
+  "en": {
+    "title": "Conservation & Adaptive Reuse",
+    "summary": "We conserve, document and bring out the value of built heritage.",
+    "services": [
+      "Restoration",
+      "Adaptive reuse",
+      "Documentation",
+      "Consultancy for listed buildings",
+      "Recovery of historic elements"
+    ],
+    "need": "To restore a historic building"
+  },
+  "de": {
+    "title": "Denkmalpflege & Umnutzung",
+    "summary": "Wir erhalten, dokumentieren und stärken das bauliche Erbe.",
+    "services": [
+      "Restaurierung",
+      "Umnutzung (Adaptive Reuse)",
+      "Dokumentation",
+      "Beratung für Baudenkmäler",
+      "Bergung historischer Bauteile"
+    ],
+    "need": "Ein historisches Gebäude restaurieren"
+  },
+  "uk": {
+    "title": "Збереження та адаптація",
+    "summary": "Зберігаємо, документуємо й повертаємо цінність архітектурній спадщині.",
+    "services": [
+      "Реставрація",
+      "Адаптивне повторне використання",
+      "Документування",
+      "Консультації щодо пам’яток",
+      "Відновлення історичних елементів"
+    ],
+    "need": "Відреставрувати історичну будівлю"
+  }
+}

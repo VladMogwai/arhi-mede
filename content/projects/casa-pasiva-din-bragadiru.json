@@ -2,6 +2,9 @@
   "ro": {
     "title": "Casa pasivă din Bragadiru",
     "category": "constructii-noi",
+    "pillars": [
+      "architecture"
+    ],
     "order": 13,
     "featured": false,
     "location": "Bragadiru",

@@ -2,6 +2,9 @@
   "ro": {
     "title": "Studiu: Piața Victoriei",
     "category": "studii",
+    "pillars": [
+      "research"
+    ],
     "order": 2,
     "featured": false,
     "location": "București",

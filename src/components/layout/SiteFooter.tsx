@@ -27,10 +27,16 @@ export function SiteFooter({ locale }: { locale: Locale }) {
             <Link href={localePath(locale)}>{nav.home}</Link>
           </li>
           <li>
-            <Link href={`${localePath(locale)}#studio`}>{nav.studio}</Link>
+            <Link href={localePath(locale, "/arhi")}>{nav.arhi}</Link>
+          </li>
+          <li>
+            <Link href={localePath(locale, "/mede")}>{nav.mede}</Link>
           </li>
           <li>
             <Link href={localePath(locale, "/projects")}>{nav.projects}</Link>
+          </li>
+          <li>
+            <Link href={localePath(locale, "/about")}>{nav.about}</Link>
           </li>
         </ul>
         <div>

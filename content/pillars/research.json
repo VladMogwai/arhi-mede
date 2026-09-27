@@ -1,0 +1,70 @@
+{
+  "ro": {
+    "name": "Research",
+    "letter": "R",
+    "division": "arhi",
+    "order": 2,
+    "title": "Cercetare și cunoaștere aplicată",
+    "summary": "Cercetăm, testăm și dezvoltăm metodologii, materiale și soluții pentru mediul construit.",
+    "services": [
+      "Studii",
+      "Audituri",
+      "Evaluări",
+      "Proiecte europene",
+      "Cercetare materiale",
+      "Metodologii",
+      "Prototipuri",
+      "Instrumente digitale",
+      "Consultanță"
+    ],
+    "need": "Să fac proiectul mai sustenabil (nZEB etc.)"
+  },
+  "en": {
+    "title": "Research & Applied Knowledge",
+    "summary": "We research, test and develop methodologies, materials and solutions for the built environment.",
+    "services": [
+      "Studies",
+      "Audits",
+      "Assessments",
+      "European projects",
+      "Materials research",
+      "Methodologies",
+      "Prototypes",
+      "Digital tools",
+      "Consultancy"
+    ],
+    "need": "To improve the sustainability of my project (nZEB etc.)"
+  },
+  "de": {
+    "title": "Forschung & angewandtes Wissen",
+    "summary": "Wir erforschen, testen und entwickeln Methoden, Materialien und Lösungen für die gebaute Umwelt.",
+    "services": [
+      "Studien",
+      "Audits",
+      "Bewertungen",
+      "Europäische Projekte",
+      "Materialforschung",
+      "Methoden",
+      "Prototypen",
+      "Digitale Werkzeuge",
+      "Beratung"
+    ],
+    "need": "Mein Projekt nachhaltiger machen (nZEB u. a.)"
+  },
+  "uk": {
+    "title": "Дослідження та прикладні знання",
+    "summary": "Досліджуємо, тестуємо й розробляємо методики, матеріали та рішення для забудованого середовища.",
+    "services": [
+      "Дослідження",
+      "Аудити",
+      "Оцінювання",
+      "Європейські проєкти",
+      "Дослідження матеріалів",
+      "Методики",
+      "Прототипи",
+      "Цифрові інструменти",
+      "Консультації"
+    ],
+    "need": "Зробити проєкт сталішим (nZEB тощо)"
+  }
+}

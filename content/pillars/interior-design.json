@@ -1,0 +1,58 @@
+{
+  "ro": {
+    "name": "Interior Design",
+    "letter": "I",
+    "division": "arhi",
+    "order": 4,
+    "title": "Design interior",
+    "summary": "Proiectăm spații interioare și soluții integrate de amenajare.",
+    "services": [
+      "Design interior",
+      "Mobilier la comandă",
+      "Iluminat",
+      "Finisaje",
+      "Mobilier încorporat",
+      "Consultanță FF&E"
+    ],
+    "need": "Design interior pentru spațiul meu"
+  },
+  "en": {
+    "title": "Interior Design",
+    "summary": "We design interior spaces and integrated fit-out solutions.",
+    "services": [
+      "Interior design",
+      "Custom furniture",
+      "Lighting",
+      "Finishes",
+      "Built-in furniture",
+      "FF&E consultancy"
+    ],
+    "need": "Interior design for my space"
+  },
+  "de": {
+    "title": "Innenarchitektur",
+    "summary": "Wir gestalten Innenräume und integrierte Ausbaulösungen.",
+    "services": [
+      "Innenarchitektur",
+      "Möbel nach Maß",
+      "Beleuchtung",
+      "Oberflächen",
+      "Einbaumöbel",
+      "FF&E-Beratung"
+    ],
+    "need": "Innenarchitektur für meine Räume"
+  },
+  "uk": {
+    "title": "Дизайн інтер’єру",
+    "summary": "Проєктуємо інтер’єри та комплексні рішення облаштування.",
+    "services": [
+      "Дизайн інтер’єру",
+      "Меблі на замовлення",
+      "Освітлення",
+      "Оздоблення",
+      "Вбудовані меблі",
+      "Консультації FF&E"
+    ],
+    "need": "Дизайн інтер’єру для мого простору"
+  }
+}

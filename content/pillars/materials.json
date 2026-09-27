@@ -1,0 +1,66 @@
+{
+  "ro": {
+    "name": "Materials",
+    "letter": "M",
+    "division": "mede",
+    "order": 5,
+    "title": "Evaluarea materialelor și circularitate",
+    "summary": "Evaluăm, documentăm, recuperăm și pregătim materiale și elemente pentru reutilizare și reintegrare în proiecte noi.",
+    "services": [
+      "Audit de materiale",
+      "Pașaport de materiale",
+      "Inventariere",
+      "Trasabilitate",
+      "Evaluarea stării",
+      "Recuperarea materialelor",
+      "Strategie de reutilizare",
+      "Consultanță privind materialele"
+    ],
+    "need": "Să aflu dacă materialele clădirii mele pot fi reutilizate"
+  },
+  "en": {
+    "title": "Material Assessment & Circularity Services",
+    "summary": "We assess, document, recover and prepare materials and elements for reuse in new projects.",
+    "services": [
+      "Material audit",
+      "Material passport",
+      "Inventory",
+      "Traceability",
+      "Condition assessment",
+      "Material recovery",
+      "Reuse strategy",
+      "Materials consultancy"
+    ],
+    "need": "To find out if my building materials can be reused"
+  },
+  "de": {
+    "title": "Materialbewertung & Kreislaufwirtschaft",
+    "summary": "Wir bewerten, dokumentieren, bergen und bereiten Materialien und Bauteile für die Wiederverwendung in neuen Projekten auf.",
+    "services": [
+      "Materialaudit",
+      "Materialpass",
+      "Inventarisierung",
+      "Rückverfolgbarkeit",
+      "Zustandsbewertung",
+      "Materialrückgewinnung",
+      "Wiederverwendungsstrategie",
+      "Materialberatung"
+    ],
+    "need": "Herausfinden, ob die Materialien meines Gebäudes wiederverwendet werden können"
+  },
+  "uk": {
+    "title": "Оцінка матеріалів і циркулярність",
+    "summary": "Оцінюємо, документуємо, відновлюємо й готуємо матеріали та елементи до повторного використання в нових проєктах.",
+    "services": [
+      "Аудит матеріалів",
+      "Паспорт матеріалів",
+      "Інвентаризація",
+      "Простежуваність",
+      "Оцінка стану",
+      "Відновлення матеріалів",
+      "Стратегія повторного використання",
+      "Консультації щодо матеріалів"
+    ],
+    "need": "Дізнатися, чи можна повторно використати матеріали моєї будівлі"
+  }
+}

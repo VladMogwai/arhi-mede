@@ -2,6 +2,9 @@
   "ro": {
     "title": "Studiu: Matache",
     "category": "studii",
+    "pillars": [
+      "research"
+    ],
     "order": 1,
     "featured": false,
     "location": "București",

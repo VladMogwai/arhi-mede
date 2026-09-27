@@ -2,6 +2,9 @@
   "ro": {
     "title": "Locuință în Valea Lungă",
     "category": "constructii-noi",
+    "pillars": [
+      "architecture"
+    ],
     "order": 8,
     "featured": false,
     "location": "Valea Lungă",
