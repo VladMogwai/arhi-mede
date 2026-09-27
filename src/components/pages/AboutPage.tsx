@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ArrowLink } from "@/components/ui/ArrowLink";
 import { Caption } from "@/components/ui/Caption";
+import { Photo } from "@/components/ui/Photo";
+import { aboutPhotos } from "@/config/placeholder-images";
 import { studio } from "@/config/site";
 import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -18,7 +20,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 export function AboutPage({ locale }: { locale: Locale }) {
-  const { about: labels, nav } = getDictionary(locale);
+  const { about: labels, nav, common } = getDictionary(locale);
   const about = getAboutPage(locale);
 
   return (
@@ -36,6 +38,19 @@ export function AboutPage({ locale }: { locale: Locale }) {
             ))}
           </div>
         </header>
+
+        <div className="mt-24 grid gap-3 px-3 sm:grid-cols-[2fr_1fr]">
+          {aboutPhotos.map((pexelsId, index) => (
+            <Photo
+              key={pexelsId}
+              source={{ kind: "example", pexelsId }}
+              alt=""
+              sizes={index === 0 ? "(min-width: 640px) 66vw, 100vw" : "(min-width: 640px) 33vw, 100vw"}
+              exampleLabel={common.examplePhoto}
+              className="aspect-4/3 sm:aspect-auto sm:h-[60svh]"
+            />
+          ))}
+        </div>
 
         <section className="px-3 pt-32 lg:grid lg:grid-cols-12 lg:gap-x-6">
           <div className="lg:col-span-10 lg:col-start-2">

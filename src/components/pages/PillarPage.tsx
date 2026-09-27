@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ArrowIcon, ArrowLink } from "@/components/ui/ArrowLink";
 import { Photo } from "@/components/ui/Photo";
+import { pillarPhotos } from "@/config/placeholder-images";
 import { studio } from "@/config/site";
 import { localePath, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -30,6 +31,7 @@ export function PillarPage({ locale, division, slug }: { locale: Locale; divisio
   const projects = getProjectsForPillar(locale, pillar.slug);
   const all = getPillars(locale);
   const next = all[(all.findIndex((item) => item.slug === pillar.slug) + 1) % all.length];
+  const [cover, ...gallery] = pillarPhotos[pillar.slug] ?? [];
 
   return (
     <>
@@ -54,7 +56,11 @@ export function PillarPage({ locale, division, slug }: { locale: Locale; divisio
           </div>
         </header>
 
-        <section className="border-t border-line px-3 py-16 lg:grid lg:grid-cols-12 lg:gap-x-6">
+        {cover && (
+          <Photo source={{ kind: "example", pexelsId: cover }} alt="" exampleLabel={common.examplePhoto} priority className="mx-3 h-[65svh]" />
+        )}
+
+        <section className="px-3 py-16 lg:grid lg:grid-cols-12 lg:gap-x-6">
           <h2 className="caption lg:col-span-2 lg:col-start-2">+ {text.services}</h2>
           <ul className="mt-6 flex flex-wrap gap-3 lg:col-span-8 lg:col-start-6 lg:mt-0">
             {pillar.services.map((service) => (
@@ -64,6 +70,21 @@ export function PillarPage({ locale, division, slug }: { locale: Locale; divisio
             ))}
           </ul>
         </section>
+
+        {gallery.length > 0 && (
+          <div className="grid gap-3 px-3 pb-16 sm:grid-cols-[3fr_2fr]">
+            {gallery.map((pexelsId) => (
+              <Photo
+                key={pexelsId}
+                source={{ kind: "example", pexelsId }}
+                alt=""
+                sizes="(min-width: 640px) 60vw, 100vw"
+                exampleLabel={common.examplePhoto}
+                className="aspect-4/3 sm:aspect-auto sm:h-[55svh]"
+              />
+            ))}
+          </div>
+        )}
 
         <section className="bg-sand px-3 py-16 lg:grid lg:grid-cols-12 lg:gap-x-6">
           <h2 className="caption lg:col-span-2 lg:col-start-2">+ {text.projects}</h2>
